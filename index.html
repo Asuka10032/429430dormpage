@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>寝室主页</title>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .img-box {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #000000;
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: large;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-box::before, .img-box::after {
+            z-index: 1000;
+            opacity: 0;
+        }
+
+        .img-box::before {
+            content: " ";
+            border: 90px solid #000;
+            position: absolute;
+        }
+
+        .img-box::after {
+            content: attr(data-tip);
+            top: -100%;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .img-box:hover::before {
+            opacity: 0.5;
+        }
+
+        .img-box:hover::after {
+            opacity: 1;
+        }
+
+ .main .cont table {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    color: #000000;
+}
+   body {
+    background-image: url(images/QQ%E5%9B%BE%E7%89%8720231201201742.jpg);
+    background-size: cover;
+}
+   </style>
+</head>
+<body>
+<div>
+	<div class="banner">
+    </div>
+    <div class="gundong">
+        <marquee><p>欢迎访问429、430寝室主页</p></marquee>
+    </div>
+    <div class="main">
+      <div class="cont">         
+              <table cellspacing="40" width="1" border="0">
+  <tbody>
+    <tr>
+      <td><div class="img-box" data-tip="郭金环">
+        <img src="images/QQ图片20231201194241.jpg" width="1080" height="1080" alt=""/> </div></td>
+      <td><div class="img-box" data-tip="杨可依">
+    <img src="images/QQ图片20231201194232.jpg" width="1080" height="1080" alt=""/>
+      </div></td>
+      <td><div class="img-box" data-tip="罗禹涵">
+    <img src="images/QQ图片20231201195047.jpg" width="1080" height="1080" alt=""/>
+		  </div></td>
+    </tr>
+    <tr>
+      <td><div class="img-box" data-tip="徐小粤">
+        <img src="images/QQ图片20231201194207.jpg" width="1080" height="1080" alt=""/> </div>&nbsp;</td>
+      <td><div class="img-box" data-tip="郭汝铖">
+        <img src="images/QQ图片20231201195044.jpg" width="1080" height="1080" alt=""/> </div>&nbsp;</td>
+      <td><div class="img-box" data-tip="黎欣雨">
+        <img src="images/QQ图片20231201194237.jpg" width="1080" height="1080" alt=""/> 
+      </div>&nbsp;</td>
+    </tr>
+    </table>
+
+        </div>
+    </div>
+    ><div class="foot">
+    	<p>END</p>
+    </div>
+</body>
+</html>
